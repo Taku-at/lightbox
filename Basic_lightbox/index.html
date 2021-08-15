@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Imgae used to open the lightbox -->
+    <div class="row">
+        <div class="column">
+            <img src="https://source.unsplash.com/random/101" onclick="openModal();currentSlide(1)" alt="" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="https://source.unsplash.com/random/102" onclick="openModal();currentSlide(2)" alt="" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="https://source.unsplash.com/random/103" onclick="openModal();currentSlide(3)" alt="" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="https://source.unsplash.com/random/104" onclick="openModal();currentSlide(4)" alt="" class="hover-shadow">
+        </div>
+    </div>
+
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 /4</div>
+                <img src="https://source.unsplash.com/random/101" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 /4</div>
+                <img src="https://source.unsplash.com/random/102" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 /4</div>
+                <img src="https://source.unsplash.com/random/103" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 /4</div>
+                <img src="https://source.unsplash.com/random/104" style="width: 100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbmail image controls -->
+            <div class="column">
+                <img class="demo" src="https://source.unsplash.com/random/101" onclick="currentSlide(1)" alt="1">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="https://source.unsplash.com/random/102" onclick="currentSlide(2)" alt="2">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="https://source.unsplash.com/random/103" onclick="currentSlide(3)" alt="3">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="https://source.unsplash.com/random/104" onclick="currentSlide(4)" alt="4">
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <!-- <script src="script.js"></script> -->
+    
+</body>
+</html>
